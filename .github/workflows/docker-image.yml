@@ -26,8 +26,8 @@ jobs:
       - name: Build and push backend image
         uses: docker/build-push-action@v5
         with:
-          context: ./streamly-backend
-          file: ./streamly-backend/backend.Dockerfile
+          context: ./streamly-backend/Streamly
+          file: ./streamly-backend/Streamly/backend.Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/streamly-backend:latest
 
